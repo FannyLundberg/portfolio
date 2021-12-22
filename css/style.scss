@@ -1,0 +1,15 @@
+// --------------------------------------------------------------
+// ----------Beskrivning av sidan--------------------------------
+// ----------Importering av sass-filer---------------------------
+// --------------------------------------------------------------
+
+@import '_normalize';
+
+/* Styling för mobil- och grundstyling */
+@import '_base';
+
+/* Styling från 680px */
+@import '_tablet';
+
+/* Styling från 1200px */
+@import '_desktop';
