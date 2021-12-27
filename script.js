@@ -1,11 +1,13 @@
 // Hämta variabler
-let smallImgMenu = document.getElementById("smallImgMenu");
-let educationBtn = document.getElementById("educationBtn");
-let workExperienceBtn = document.getElementById("workExperienceBtn");
-let aboutMeBtn = document.getElementById("aboutMeBtn");
-let projectBtn = document.getElementById("projectBtn");
-let contactBtn = document.getElementById("contactBtn");
-let sectionContent = document.getElementById("sectionContent");
+const smallImgMenu = document.getElementById("smallImgMenu");
+const educationBtn = document.getElementById("educationBtn");
+const workExperienceBtn = document.getElementById("workExperienceBtn");
+const aboutMeBtn = document.getElementById("aboutMeBtn");
+const projectBtn = document.getElementById("projectBtn");
+const contactBtn = document.getElementById("contactBtn");
+const sectionContent = document.getElementById("sectionContent");
+const menuBtn = document.getElementById("menuBtn");
+
 
 // Skapa element - profilbild
 let profileImg = document.createElement("img");
@@ -24,107 +26,125 @@ homeH2.innerHTML = "Blivande Front End Developer." + "</br>" + "Examen i juni 20
 sectionContent.append(profileImg, homeH1, homeH2);
 
 
-// Klick på lilla bilden i menyn / hemknapp
-smallImgMenu.addEventListener("click", (homePage));
+// Klick på hamburgarmeny
+menuBtn.addEventListener("click", (openMenu));
 
-function homePage() {
-    sectionContent.innerHTML = ""
+// Visa meny
+function openMenu() {
+    console.log("Klick på knappen")
 
-    sectionContent.append(profileImg, homeH1, homeH2);
-}
+    sectionContent.innerHTML = "";
 
+    // Skapa en ul
+    const viewOpenMenu = document.createElement("ul");
+    sectionContent.append(viewOpenMenu);
 
-// Klick på Utbildningsknappen
-educationBtn.addEventListener("click", (education));
+    // Skapa listan - Hem
+    const homeMenu = document.createElement("li");
+    homeMenu.innerText = "Hem";
 
-function education() {
-    sectionContent.innerHTML = ""
-
-    // Skapa element - H1
-    let headingEducation = document.createElement("h1");
-    headingEducation.innerText = "Utbildning"
-
-    // Skapa element - p
-    let pEducation = document.createElement("p");
-    pEducation.innerText = "Här ska det stå om utbildning."
-
-    // Appenda nya elementen
-    sectionContent.append(headingEducation, pEducation);
-}
-
-
-// Klick på Arbetslivserfarenhetsknappen
-workExperienceBtn.addEventListener("click", (workExperience));
-
-function workExperience() {
-    sectionContent.innerHTML = ""
-
-    // Skapa element - H1
-    let headingWork = document.createElement("h1");
-    headingWork.innerText = "Arbetslivserfarenhet"
+    // Skapa listan - Utbildning
+    const aboutEducationMenu = document.createElement("li");
+    aboutEducationMenu.innerText = "Utbildning";
     
-    // Skapa element - p
-    let pWork = document.createElement("p");
-    pWork.innerText = "Här ska det stå om arbetslivserfarenhet."
+    // Skapa listan - Arbetslivserfarenhet
+    const aboutWorkMenu = document.createElement("li");
+    aboutWorkMenu.innerText = "Arbetslivserfarenhet";
 
-    // Appenda nya elementen
-    sectionContent.append(headingWork, pWork);
+    // Skapa listan - Projekt
+    const aboutProjectMenu = document.createElement("li");
+    aboutProjectMenu.innerText = "Projekt";
+
+    // Skapa listan - Om mig
+    const aboutMeMenu = document.createElement("li");
+    aboutMeMenu.innerText = "Om mig";
+
+    // Appenda li på ul
+    viewOpenMenu.append(homeMenu, aboutEducationMenu, aboutWorkMenu, aboutProjectMenu, aboutMeMenu);
+
+    let menuDisplayed = viewOpenMenu + homeMenu + aboutEducationMenu + aboutWorkMenu + aboutMeMenu + aboutProjectMenu;
+
+    // För att inte skapa fler ul och li vid tryck på meny
+    if (menuDisplayed) {
+        menuBtn.addEventListener("click", () => { 
+            viewOpenMenu.remove();            
+        });
+    }
+
+    // Göra li till länkar/knappar
+    homeMenu.addEventListener("click", (homePage));
+    aboutEducationMenu.addEventListener("click", (aboutEducationList));
+    aboutWorkMenu.addEventListener("click", (aboutWorkList));
+    aboutMeMenu.addEventListener("click", (aboutMeList));
+    aboutProjectMenu.addEventListener("click", (aboutProjectList));
 }
 
-
-// Klick på Om mig-knappen
-aboutMeBtn.addEventListener("click", (aboutMe));
-
-function aboutMe() {
-    sectionContent.innerHTML = ""
-
-    // Skapa element - H1
-    let headingMe = document.createElement("h1");
-    headingMe.innerText = "Om mig"
-
-    // Skapa element - p
-    let pMe = document.createElement("p");
-    pMe.innerText = "Här ska det stå om mig."
-
-    // Appenda nya elementen
-    sectionContent.append(headingMe, pMe);
+// Funktion som körs om "Utbildning" är klickad
+function homePage() {
+    location.reload();
 }
 
+// Funktion som körs om "Utbildning" är klickad
+function aboutEducationList() {
 
-// Klick på Projektknappen
-projectBtn.addEventListener("click", (projects));
+    sectionContent.innerHTML = "";
 
-function projects() {
-    sectionContent.innerHTML = ""
-
-    // Skapa element - H1
-    let headingProject = document.createElement("h1");
-    headingProject.innerText = "Projekt"
-    sectionContent.append(headingProject);
-
-    // Skapa element - p
-    let pProjects = document.createElement("p");
-    pProjects.innerText = "Här ska det länkas till projekt."
-
-    // Appenda nya elementen
-    sectionContent.append(headingProject, pProjects);
+    // H1
+    const aboutSchoolH1 = document.createElement("h1");
+    aboutSchoolH1.innerText = "Utbildning"
+    sectionContent.append(aboutSchoolH1);
 }
 
+// Funktion som körs om "Arbetslivserfarenhet" är klickad
+function aboutWorkList() {
 
-// Klick på Kontaktknappen
-contactBtn.addEventListener("click", (contact));
+    sectionContent.innerHTML = "";
 
-function contact() {
-    sectionContent.innerHTML = ""
+    // H1
+    const aboutWorkH1 = document.createElement("h1");
+    aboutWorkH1.innerText = "Arbetslivserfarenhet"
+    sectionContent.append(aboutWorkH1);
+}
 
-    // Skapa element - H1
-    let headingContact = document.createElement("h1");
-    headingContact.innerText = "Kontakt"
+// Funktion som körs om "Kontakt" är klickad
+function aboutProjectList() {
 
-    // Skapa element - p
-    let pContact = document.createElement("p");
-    pContact.innerText = "Här ska det stå om hur man kontaktar mig."
+    sectionContent.innerHTML = "";
 
-    // Appenda nya elementen
-    sectionContent.append(headingContact, pContact);
+    // H1
+    const aboutContactH1 = document.createElement("h1");
+    aboutContactH1.innerText = "Projekt"
+    sectionContent.append(aboutContactH1);
+}
+
+// Funktion som körs om "Om mig" är klickad
+function aboutMeList() {
+
+    sectionContent.innerHTML = "";
+
+    // H1
+    const aboutMeH1 = document.createElement("h1");
+    aboutMeH1.innerText = "Hej, Jag heter Fanny Lundberg."
+
+    // H2
+    const aboutMeH2 = document.createElement("h2");
+    aboutMeH2.innerText = "Jag är blivande Front End Developer."
+
+    // P
+    const aboutMeP = document.createElement("p");
+    aboutMeP.innerText = "Jag studerar just nu på Medieinstitutet där jag har lär mig HTML, CSS (Sass) och JavaScript (React). Jag tar examen i juni 2023."
+    
+    // Appenda nya element
+    sectionContent.append(aboutMeH1, aboutMeH2, aboutMeP);
+}
+
+// Funktion som körs om "Kontakt" är klickad
+function aboutContactList() {
+
+    sectionContent.innerHTML = "";
+
+    // H1
+    const aboutContactH1 = document.createElement("h1");
+    aboutContactH1.innerText = "Kontakt"
+    sectionContent.append(aboutContactH1);
 }

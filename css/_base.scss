@@ -14,39 +14,56 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 // Övre delen av sidan
 
+/* header */ 
 header {
-    width: 100%;
-    button {
-        background-color: pink;
-        &:hover {
-            background-color: rgb(235, 150, 164);
-        }
-    }
-}
-
-#sectionHeader {
-    height: 15vh;
-    margin-top: 2%;
+    height: 10vh;
     background-color: rgba(#ffffff, 0.1);
 }
 
-#smallImgMenu {
-    width: 45px;
-    height: auto;
-    border-radius: 50%;
+/* hamburgarmenyn */
+.hamburger {
+    position: fixed;
+    top: 10px; 
+    right: 10px;
+    z-index: 2;
+}
+
+header span {
+    background-color: #e78ea5;
+    border: rgb(77, 76, 76) 1px solid;
+    height: 5px;
+    width: 35px;
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    border-radius: 4em/2em;
+}
+
+ul {
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    position: fixed;
+    background-color: rgba(5, 5, 5, 0.5);
+}
+
+li {
+    color: #fff;
+    list-style-type: none;
+    margin: 4%;
 }
 
 // Mitten av sidan
 
 section {
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
+    background: linear-gradient(to top left, black 50%, white 50%, #e78ea5 50%, #e78ea5 100%);
 }
 
 #bigProfileImg {
@@ -80,33 +97,26 @@ p {
 footer {
     width: 100%;
     height: 10vh;
-    background-color: rgba(#ffffff, 0.1);
-    padding-top: 3%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(#fff, 0.1);
 }
 
-#contactInfoFooter {
-    box-sizing: border-box;
-    width: 100%;
-    height: 7vh;
-    display: flex;
-}
-
-ul {
+.contactUl {
     width: 100%;
     display: inline;
     padding: 0;
     margin: 0;
 }
 
-li {
+.contactLi {
     list-style-type: none;
     display: inline;
-    box-sizing: border-box;
     margin-left: 2%;
     margin-right: 2%;
     padding: 1%;
     svg {
-        color: pink;
+        color: #e78ea5;
         transition: 0.15s ease-in-out;
         &:hover {
             border: 1px solid white;
