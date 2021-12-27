@@ -4,4 +4,30 @@
 // --------------------------------------------------------------
 @media screen and (min-width: 1200px) {
 
+    // Mitten av sidan
+    #bigProfileImg {
+        width: 50%;
+        max-width: 250px;
+        margin-top: 7%;
+        margin-left: 7%;
+        float: left;
+    }
+
+    h1 {
+        padding-top: 10%;
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+
+
+    // Nedre delen av sidan
+    footer {
+        height: 10vh;
+        background-color: rgba(#ffffff, 0.1);
+        padding-top: 2%;
+    }
+
 }
