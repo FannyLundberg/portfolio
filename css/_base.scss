@@ -43,10 +43,11 @@ header span {
 
 ul {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     text-align: center;
     position: fixed;
     background-color: rgba(5, 5, 5, 0.5);
+    margin: 0;
 }
 
 li {
@@ -59,10 +60,10 @@ li {
 
 section {
     width: 100%;
-    height: 75vh;
-    padding-left: 5%;
-    padding-right: 5%;
+    height: 80vh;
     text-align: center;
+    padding: 0;
+    margin: 0;
     background: linear-gradient(to top left, black 50%, white 50%, #e78ea5 50%, #e78ea5 100%);
 }
 
@@ -80,7 +81,7 @@ section {
 h1 {
     color: white;
     font-size: 1.7rem;
-    margin-top: 10%;
+    margin: 0;
 }
 
 h2 {
@@ -105,16 +106,11 @@ footer {
 .contactUl {
     width: 100%;
     display: inline;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .contactLi {
-    list-style-type: none;
-    display: inline;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding: 1%;
     svg {
         color: #e78ea5;
         transition: 0.15s ease-in-out;
