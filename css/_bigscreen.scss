@@ -1,0 +1,33 @@
+// --------------------------------------------------------------
+// ----------Beskrivning av sidan--------------------------------
+// ----------Denna sida stylar för skärmar på minst 1500px-------
+// --------------------------------------------------------------
+@media screen and (min-width: 1500px) {
+ 
+    // Mitten av sidan
+    #bigProfileImg {
+        width: 40%;
+        max-width: 300px;
+        margin-top: 10%;
+        margin-left: 15%;
+        float: left;
+    }
+
+    h1 {
+        padding-top: 14%;
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Öppen meny */
+    ul {
+        padding: 4%;
+    }
+
+    li {
+        margin: 5%;
+    }
+}

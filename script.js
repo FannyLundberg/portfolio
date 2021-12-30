@@ -14,7 +14,7 @@ homeH1.innerText = "Fanny Lundberg"
 
 // Skapa element till förstasidan - H2
 let homeH2 = document.createElement("h2");
-homeH2.innerHTML = "Blivande Front End Developer." + "</br>" + "Examen i juni 2023."
+homeH2.innerHTML = "Blivande Front End Developer" + "</br>" + "Examen i juni 2023"
 
 // Appenda nya element på förstasidan
 sectionContent.append(profileImg, homeH1, homeH2);
@@ -86,6 +86,7 @@ function aboutEducationList() {
 
     // H1 Utbildning
     const educationH1 = document.createElement("h1");
+    educationH1.id = "educationH1";
     educationH1.innerText = "Utbildning"
 
     // H2 Medieinstitutet
@@ -124,7 +125,12 @@ function aboutWorkList() {
 
     // H1
     const workH1 = document.createElement("h1");
+    workH1.id = "workH1";
     workH1.innerText = "Arbetslivserfarenhet"
+
+    // Div Sergel
+    const divSergel = document.createElement("div");
+    divSergel.className = "divWork";
 
     // H2 Sergel Kredittjänster
     const workH2Sergel = document.createElement("h2");
@@ -132,11 +138,15 @@ function aboutWorkList() {
 
     // P Sergel Kredittjänster Bemanningsplanering
     const workPSergel1 = document.createElement("p");
-    workPSergel1.innerText = "Bemanningsplanering med huvudansvar för systemförvaltning av telefonisystem (CallGuide/ACE, Puzzel)"
+    workPSergel1.innerText = "Bemanningsplanering med huvudansvar för systemförvaltning och utveckling av telefonisystem (CallGuide/ACE, Puzzel)"
 
     // P Sergel Kredittjänster Inkassohandläggare
     const workPSergel2 = document.createElement("p");
     workPSergel2.innerText = "Inkassohandläggare"
+
+    // Div Student consulting
+    const divSc = document.createElement("div");
+    divSc.className = "divWork";
 
     // H2 Student consulting
     const workH2Sc = document.createElement("h2");
@@ -147,7 +157,9 @@ function aboutWorkList() {
     workPSc.innerText = "Business support - Personaladministratör"
 
     // Appenda nya element
-    sectionContent.append(workH1, workH2Sergel, workPSergel1, workPSergel2, workH2Sc, workPSc);
+    sectionContent.append(workH1, divSergel, divSc);
+    divSergel.append(workH2Sergel, workPSergel1, workPSergel2, workPSergel2);
+    divSc.append(workH2Sc, workPSc);
 }
 
 
@@ -158,13 +170,14 @@ function aboutProjectList() {
 
     // H1
     const projectH1 = document.createElement("h1");
+    projectH1.id = "projectH1";
     projectH1.innerText = "Projekt"
     sectionContent.append(projectH1);
 
     fetch("https://api.github.com/users/FannyLundberg/repos")
     .then(response => response.json())
     .then(data => {
-        printProjects(data[4]);
+        printProjects(data[6]);
     });
 }
 
@@ -189,6 +202,7 @@ function aboutMeList() {
 
     // H1
     const aboutMeH1 = document.createElement("h1");
+    aboutMeH1.id = "aboutMeH1";
     aboutMeH1.innerText = "Hej, Jag heter Fanny Lundberg."
 
     // H2

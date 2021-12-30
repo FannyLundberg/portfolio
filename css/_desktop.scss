@@ -8,13 +8,13 @@
     #bigProfileImg {
         width: 50%;
         max-width: 250px;
-        margin-top: 7%;
-        margin-left: 7%;
+        margin-top: 10%;
+        margin-left: 11%;
         float: left;
     }
 
     h1 {
-        padding-top: 10%;
+        padding-top: 13%;
         font-size: 3.2rem;
     }
     
@@ -22,11 +22,25 @@
         font-size: 1.9rem;
     }
 
+    #workH1,
+    #educationH1,
+    #projectH1,
+    #aboutMeH1 {
+        padding-top: 4%;
+        font-size: 2.5rem;
+    }
+
 
     // Nedre delen av sidan
     footer {
         height: 10vh;
         background-color: rgba(#ffffff, 0.1);
+    }
+
+    .contactLi {
+        margin: 2%;  
+        padding-left: 1%;
+        padding-right: 1%;
     }
 
 }
