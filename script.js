@@ -134,6 +134,7 @@ function aboutWorkList() {
 
     // H2 Sergel Kredittjänster
     const workH2Sergel = document.createElement("h2");
+    workH2Sergel.className = "h2Work";
     workH2Sergel.innerText = "Sergel Kredittjänster (2015 - nuvarande)"
 
     // P Sergel Kredittjänster Bemanningsplanering
@@ -150,16 +151,31 @@ function aboutWorkList() {
 
     // H2 Student consulting
     const workH2Sc = document.createElement("h2");
+    workH2Sc.className = "h2Work";
     workH2Sc.innerText = "Student consulting (2013 - 2015)"
 
     // P Student consulting
     const workPSc = document.createElement("p");
     workPSc.innerText = "Business support - Personaladministratör"
 
+    // Div KappAhl
+    const divKappahl = document.createElement("div");
+    divKappahl.className = "divWork";
+
+    // H2 Student consulting
+    const workH2Kappahl = document.createElement("h2");
+    workH2Kappahl.className = "h2Work";
+    workH2Kappahl.innerText = "KappAhl (2009 - 2013)"
+
+    // P Student consulting
+    const workPKappahl = document.createElement("p");
+    workPKappahl.innerText = "Säljare med ansvar för upplärning av nyanställda, praktikanter etc."
+
     // Appenda nya element
-    sectionContent.append(workH1, divSergel, divSc);
+    sectionContent.append(workH1, divSergel, divSc, divKappahl);
     divSergel.append(workH2Sergel, workPSergel1, workPSergel2, workPSergel2);
     divSc.append(workH2Sc, workPSc);
+    divKappahl.append(workH2Kappahl, workPKappahl);
 }
 
 
