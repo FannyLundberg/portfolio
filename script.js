@@ -4,28 +4,28 @@ const menuBtn = document.getElementById("menuBtn");
 
 
 // Skapa element - profilbild
-let profileImg = document.createElement("img");
-profileImg.src = "./img/profilbild.jpg";
-profileImg.id = "bigProfileImg";
+const profileImgHome = document.createElement("img");
+profileImgHome.src = "./img/profilbild.jpg";
+profileImgHome.id = "bigProfileImg";
 
 // Skapa element till förstasidan- H1
-let homeH1 = document.createElement("h1");
+const homeH1 = document.createElement("h1");
 homeH1.innerText = "Fanny Lundberg"
 
 // Skapa element till förstasidan - H2
-let homeH2 = document.createElement("h2");
+const homeH2 = document.createElement("h2");
 homeH2.innerHTML = "Blivande Front End Developer" + "</br>" + "Examen i juni 2023"
 
 // Appenda nya element på förstasidan
-sectionContent.append(profileImg, homeH1, homeH2);
+sectionContent.append(profileImgHome, homeH1, homeH2);
 
 
 // Klick på hamburgarmeny
 menuBtn.addEventListener("click", (openMenu));
 
+
 // Visa meny
 function openMenu() {
-    console.log("Klick på knappen")
 
     sectionContent.innerHTML = "";
 
@@ -57,13 +57,13 @@ function openMenu() {
     viewOpenMenu.append(homeMenu, aboutEducationMenu, aboutWorkMenu, aboutProjectMenu, aboutMeMenu);
 
     // För att inte skapa fler ul och li vid tryck på meny
-    let menuDisplayed = viewOpenMenu + homeMenu + aboutEducationMenu + aboutWorkMenu + + aboutProjectMenu + aboutMeMenu;
+    const menuDisplayed = viewOpenMenu + homeMenu + aboutEducationMenu + aboutWorkMenu + + aboutProjectMenu + aboutMeMenu;
 
     if (menuDisplayed) {
         menuBtn.addEventListener("click", () => { 
-            viewOpenMenu.remove();            
-        });
-    }
+            viewOpenMenu.remove();          
+    });
+}
 
     // Göra li till länkar/knappar
     homeMenu.addEventListener("click", (homePage));
@@ -84,37 +84,55 @@ function aboutEducationList() {
 
     sectionContent.innerHTML = "";
 
-    // H1 Utbildning
+    // H1
     const educationH1 = document.createElement("h1");
     educationH1.id = "educationH1";
-    educationH1.innerText = "Utbildning"
+    educationH1.innerText = "Utbildning";
+
+    // Div Medieinstitutet
+    const divMedieinstitutet = document.createElement("div");
+    divMedieinstitutet.className = "divEducation";
 
     // H2 Medieinstitutet
     const educationH2Mi = document.createElement("h2");
-    educationH2Mi.innerText = "Medieinstitutet (2021 - 2023)"
+    educationH2Mi.className = "h2Education";
+    educationH2Mi.innerText = "Medieinstitutet (2021 - 2023)";
 
     // P Medieinstitutet
-    const educationPMo = document.createElement("p");
-    educationPMo.innerText = "Front End Developer"
+    const educationPMi = document.createElement("p");
+    educationPMi.innerText = "Front End Developer";
+
+    // Div Södertörns högskola
+    const divSH = document.createElement("div");
+    divSH.className = "divEducation";
 
     // H2 Södertörns högskola
     const educationH2Sh = document.createElement("h2");
-    educationH2Sh.innerText = "Södertörns högskola (2012 - 2015)"
+    educationH2Sh.className = "h2Education";
+    educationH2Sh.innerText = "Södertörns högskola (2012 - 2015)";
 
     // P Södertörns högskola
     const educationPSh = document.createElement("p");
-    educationPSh.innerText = "Internationella ekonomprogrammet"
+    educationPSh.innerText = "Internationella ekonomprogrammet";
 
-    // H2 Gymnasium
+    // Div Jensen gymnasium Södra
+    const divJensen = document.createElement("div");
+    divJensen.className = "divEducation";
+
+    // H2 Jensen gymnasium Södra
     const educationH2Jgs = document.createElement("h2");
     educationH2Jgs.innerText = "Jensen Gymnasium Södra (2007 - 2010)"
 
-    // P Gymnasium
+    // P Jensen gymnasium Södra
     const educationPJgs = document.createElement("p");
     educationPJgs.innerText = "Företagande och försäljning"
 
+
     // Appenda nya element
-    sectionContent.append(educationH1, educationH2Mi, educationPMo, educationH2Sh, educationPSh, educationH2Jgs, educationPJgs);
+    sectionContent.append(educationH1, divMedieinstitutet, divSH, divJensen);
+    divMedieinstitutet.append(educationH2Mi, educationPMi);
+    divSH.append(educationH2Sh, educationPSh);
+    divJensen.append(educationH2Jgs, educationPJgs)
 }
 
 
@@ -137,13 +155,23 @@ function aboutWorkList() {
     workH2Sergel.className = "h2Work";
     workH2Sergel.innerText = "Sergel Kredittjänster (2015 - nuvarande)"
 
+    // H2 Sergel Kredittjänster Bemanningsplanering
+    const workH3Sergel1 = document.createElement("h3");
+    workH3Sergel1.className = "h3Work";
+    workH3Sergel1.innerText = "Personnel Planning Officer"
+
     // P Sergel Kredittjänster Bemanningsplanering
     const workPSergel1 = document.createElement("p");
-    workPSergel1.innerText = "Bemanningsplanering med huvudansvar för systemförvaltning och utveckling av telefonisystem (CallGuide/ACE, Puzzel)"
+    workPSergel1.innerText = "Bemanningsplanerare med huvudansvar för systemförvaltning och utveckling av telefonisystem (CallGuide/ACE, Puzzel)"
+
+    // H3 Sergel Kredittjänster Inkassohandläggare
+    const workH3Sergel2 = document.createElement("h3");
+    workH3Sergel2.className = "h3Work";
+    workH3Sergel2.innerText = "Inkasso- och reskontrahandläggare"
 
     // P Sergel Kredittjänster Inkassohandläggare
     const workPSergel2 = document.createElement("p");
-    workPSergel2.innerText = "Inkassohandläggare"
+    workPSergel2.innerText = "Handläggning av ärenden via telefon, chatt och mail"
 
     // Div Student consulting
     const divSc = document.createElement("div");
@@ -173,7 +201,7 @@ function aboutWorkList() {
 
     // Appenda nya element
     sectionContent.append(workH1, divSergel, divSc, divKappahl);
-    divSergel.append(workH2Sergel, workPSergel1, workPSergel2, workPSergel2);
+    divSergel.append(workH2Sergel, workH3Sergel1, workPSergel1, workH3Sergel2, workPSergel2, workPSergel2);
     divSc.append(workH2Sc, workPSc);
     divKappahl.append(workH2Kappahl, workPKappahl);
 }
@@ -189,25 +217,6 @@ function aboutProjectList() {
     projectH1.id = "projectH1";
     projectH1.innerText = "Projekt"
     sectionContent.append(projectH1);
-
-    fetch("https://api.github.com/users/FannyLundberg/repos")
-    .then(response => response.json())
-    .then(data => {
-        printProjects(data[6]);
-    });
-}
-
-// Skriv ut projekt som klickbara
-function printProjects(data) {
-
-    // H2
-    const projectH2 = document.createElement("h2");
-    projectH2.innerText = "Övning 'Strängpoesi': " + " " + data.clone_url;
-    sectionContent.append(projectH2);
-
-    projectH2.addEventListener("click", () => {
-        console.log(data.clone_url);
-    });  
 }
 
 
@@ -215,6 +224,11 @@ function printProjects(data) {
 function aboutMeList() {
 
     sectionContent.innerHTML = "";
+
+    // Skapa element - profilbild
+    const profileImgAboutMe = document.createElement("img");
+    profileImgAboutMe.src = "./img/profilbild2.jpg";
+    profileImgAboutMe.id = "profileImgAboutMe";
 
     // H1
     const aboutMeH1 = document.createElement("h1");
@@ -230,5 +244,5 @@ function aboutMeList() {
     aboutMeP.innerText = "Jag studerar just nu på Medieinstitutet där jag har lär mig HTML, CSS (Sass) och JavaScript (React). Jag tar examen i juni 2023."
     
     // Appenda nya element
-    sectionContent.append(aboutMeH1, aboutMeH2, aboutMeP);
+    sectionContent.append(profileImgAboutMe, aboutMeH1, aboutMeH2, aboutMeP);
 }

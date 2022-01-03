@@ -4,6 +4,12 @@
 // --------------------------------------------------------------
 @media screen and (min-width: 1500px) {
  
+    // Övre delen av sidan
+    .hamburger {
+        top: 20px; 
+        right: 20px;
+    }
+
     // Mitten av sidan
     #bigProfileImg {
         width: 40%;

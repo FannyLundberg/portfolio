@@ -4,6 +4,19 @@
 // --------------------------------------------------------------
 @media screen and (min-width: 1200px) {
 
+    // Övre delen av sidan
+    .hamburger {
+        top: 15px; 
+        right: 15px;
+    }
+    
+    header span {
+        height: 7px;
+        width: 45px;
+        display: block;
+        margin-top: 5px;
+    }
+
     // Mitten av sidan
     #bigProfileImg {
         width: 50%;
@@ -26,28 +39,40 @@
     #educationH1,
     #projectH1,
     #aboutMeH1 {
-        padding-top: 4%;
+        padding-top: 2.5%;
         font-size: 2.5rem;
     }
 
-    .divWork {
+    .divWork,
+    .divEducation {
         float: left;
         width: 28%;
-        height: 40%;
-        background-color: #222;
+        height: 50%;
+        background-color: rgba(#222, 0.65);
         margin: 2.66%;
+        border-radius: 20%;
         h2 {
-            font-size: 1rem;
+            font-size: 1.2rem;
+            padding-top: 2%;
+            padding-left: 2%;
+            padding-right: 2%;
         }
         p {
-            font-size: 0.8rem;
+            font-size: 1rem;
+            margin-left: 8%;
+            margin-right: 8%;
         }
+    }
+
+    #profileImgAboutMe {
+        max-width: 250px;
+        margin-top: 3%;
     }
 
     // Nedre delen av sidan
     footer {
         height: 10vh;
-        background-color: rgba(#ffffff, 0.1);
+        background-color: rgba(#fff, 0.1);
     }
 
     .contactLi {
