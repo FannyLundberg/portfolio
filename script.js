@@ -64,7 +64,6 @@ function openMenu() {
             viewOpenMenu.remove();          
     });
 }
-
     // Göra li till länkar/knappar
     homeMenu.addEventListener("click", (homePage));
     aboutEducationMenu.addEventListener("click", (aboutEducationList));
@@ -72,6 +71,7 @@ function openMenu() {
     aboutMeMenu.addEventListener("click", (aboutMeList));
     aboutProjectMenu.addEventListener("click", (aboutProjectList));
 }
+
 
 // Funktion som körs om "Hem" är klickad
 function homePage() {
@@ -237,12 +237,16 @@ function aboutMeList() {
 
     // H2
     const aboutMeH2 = document.createElement("h2");
-    aboutMeH2.innerText = "Jag är blivande Front End Developer."
+    aboutMeH2.innerText = "Provade på programmering och fastnade direkt."
 
     // P
-    const aboutMeP = document.createElement("p");
-    aboutMeP.innerText = "Jag studerar just nu på Medieinstitutet där jag har lär mig HTML, CSS (Sass) och JavaScript (React). Jag tar examen i juni 2023."
+    const aboutMeP1 = document.createElement("p");
+    aboutMeP1.innerText = "Jag testade enkel HTML, som många andra i tonåren, men testade för några år sedan en kurs hos Tjejer kodar - och fastnade direkt. Jag förstod då att programmering var något för mig. Sedan starten av utbildningen i oktober 2021 kan jag nu ägna mig åt att koda på heltid, vilket är otrligt kul. Det finns ju så mycket att lära sig!"
     
+    // P
+    const aboutMeP2 = document.createElement("p");
+    aboutMeP2.innerText = "Utöver att koda tycker jag om att vara med min familj, lyssna på podd och se dokumentärer. När världen tillåter tycker jag även om att resa och gå på konsert."
+
     // Appenda nya element
-    sectionContent.append(profileImgAboutMe, aboutMeH1, aboutMeH2, aboutMeP);
+    sectionContent.append(profileImgAboutMe, aboutMeH1, aboutMeH2, aboutMeP1, aboutMeP2);
 }
