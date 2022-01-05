@@ -28,6 +28,31 @@
         font-size: 2rem;
     }
 
+    .divWork,
+    .divEducation {
+        float: left;
+        width: 28%;
+        height: 55%;
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
+
+    #divSH {
+        height: 55%;
+    }
+
+    #divJensen, 
+    #divDiverse {
+        height: 25%;
+        margin-bottom: 3%;
+    }
+
+    #divJensen {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
     /* Öppen meny */
     ul {
         padding: 4%;
