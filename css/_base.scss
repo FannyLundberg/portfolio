@@ -87,7 +87,7 @@ section {
     text-align: center;
     padding: 0;
     margin: 0;
-    background: linear-gradient(to top left, #000 70%, #fff 50%, #e78ea5 50%, #e78ea5 100%);
+    background: linear-gradient(to top left, #000 78%, #fff 50%, #e78ea5 50%, #e78ea5 100%);
 }
 
 #bigProfileImg {
@@ -109,6 +109,10 @@ h1 {
 
 h2 {
     font-size: 1.3rem;
+}
+
+#fedHeading {
+    color: #e78ea5;
 }
 
 .divEducation,

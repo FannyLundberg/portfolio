@@ -21,7 +21,7 @@ export function aboutMeList() {
 
     // P
     const aboutMeP1 = document.createElement("p");
-    aboutMeP1.innerText = "Jag testade enkel HTML, som många andra i tonåren, men testade för några år sedan en kurs hos Tjejer kodar - och fastnade direkt. Jag förstod då att programmering var något för mig. Sedan starten av utbildningen i oktober 2021 kan jag nu ägna mig åt att koda på heltid, vilket är otroligt kul. Det finns ju så mycket att lära sig!"
+    aboutMeP1.innerText = "Jag testade enkel HTML, som många andra i tonåren, men sommaren 2020 testade jag en kurs hos Tjejer kodar - och förstod då att programmering är något för mig. Sedan starten av utbildningen i oktober 2021 kan jag nu ägna mig åt att koda på heltid, vilket är otroligt kul. Det finns ju så mycket att lära sig!"
     
     // P
     const aboutMeP2 = document.createElement("p");
