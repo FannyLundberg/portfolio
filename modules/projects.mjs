@@ -1,6 +1,8 @@
 // Funktion som körs om "Projekt" är klickad
 export function aboutProjectList() {
 
+    //document.querySelector("#menuBtn").classList.remove("open");
+
     sectionContent.innerHTML = "";
 
     // H1

@@ -1,6 +1,8 @@
 // Funktion som körs om "Utbildning" är klickad
 export function aboutEducationList() {
 
+    //document.querySelector("#menuBtn").classList.remove("open");
+
     sectionContent.innerHTML = "";
 
     // H1
@@ -15,7 +17,7 @@ export function aboutEducationList() {
     // H2 Medieinstitutet
     const educationH2Mi = document.createElement("h2");
     educationH2Mi.className = "h2Education";
-    educationH2Mi.innerHTML = "Medieinstitutet (&nbsp;2021&nbsp;-&nbsp;2023&nbsp;)";
+    educationH2Mi.innerHTML = "Medieinstitutet " + "<span class='workSpan'>(&nbsp;2021&nbsp;-&nbsp;2023&nbsp;)</span>";
 
     // H3 Medieinstitutet
     const educationH3Mi = document.createElement("h3");
@@ -23,7 +25,7 @@ export function aboutEducationList() {
 
     // P Medieinstitutet
     const educationPMi = document.createElement("p");
-    educationPMi.innerHTML = "<b>Utbildningen inkluderar främst:</b><br> HTML, CSS (Sass), JavaScript <br><br> <b>Ramverk:</b><br> React <br><br><b>Bibliotek:</b><br> jQuery <br><br><b>Övrigt:</b><br> Användbarhet, tillgänglighet, UX, API:er, projekt- och arbetsmetodik för utvecklare";
+    educationPMi.innerHTML = "<b>Utbildningen inkluderar främst:</b><br> HTML, CSS (Sass), JavaScript <br><br> <b>Ramverk:</b><br> React, Angular <br><br><b>Bibliotek:</b><br> jQuery <br><br><b>Övrigt:</b><br> Användbarhet, tillgänglighet, UX, API:er, projekt- och arbetsmetodik för utvecklare";
 
     // Div Södertörns högskola
     const divSH = document.createElement("div");
@@ -33,7 +35,7 @@ export function aboutEducationList() {
     // H2 Södertörns högskola
     const educationH2Sh = document.createElement("h2");
     educationH2Sh.className = "h2Education";
-    educationH2Sh.innerHTML = "Södertörns högskola (&nbsp;2012&nbsp;-&nbsp;2015&nbsp;)";
+    educationH2Sh.innerHTML = "Södertörns högskola " + "<span class='workSpan'>(&nbsp;2012&nbsp;-&nbsp;2015&nbsp;)</span>";
 
     // H3 Södertörns högskola
     const educationH3Sh = document.createElement("h3");
@@ -63,7 +65,7 @@ export function aboutEducationList() {
 
     // H2 Jensen gymnasium Södra
     const educationH2Jgs = document.createElement("h2");
-    educationH2Jgs.innerHTML = "Jensen Gymnasium Södra <wbr> (&nbsp;2007&nbsp;-&nbsp;2010&nbsp;)"
+    educationH2Jgs.innerHTML = "Jensen Gymnasium Södra " + "<span class='workSpan'>(&nbsp;2007&nbsp;-&nbsp;2010&nbsp;)</span>"
 
     // P Jensen gymnasium Södra
     const educationPJgs = document.createElement("p");

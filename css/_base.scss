@@ -45,6 +45,22 @@ header span {
     }
 }
 
+#menuBtn.open .span2 {
+    transform: translateX(-65px);
+    background: transparent;
+    border: transparent;
+}
+
+#menuBtn.open .span1 {
+    transform: rotate(45deg) translate(6px, 6px);
+    border: transparent;
+}
+
+#menuBtn.open .span3 {
+    transform: rotate(-45deg) translate(6px, -6px);
+    border: transparent;
+}
+
 ul {
     width: 100%;
     height: 80vh;
@@ -131,6 +147,10 @@ h2 {
 #divDiverse {
     height: 30%;
     margin-bottom: 2%;
+}
+
+.workSpan {
+    font-size: 1rem;
 }
 
 #profileImgAboutMe {
