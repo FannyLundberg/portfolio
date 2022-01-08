@@ -4,13 +4,24 @@
 // --------------------------------------------------------------
 @media screen and (min-width: 1500px) {
  
-    // Övre delen av sidan
+    /* Övre delen av sidan */
+    // hamburgermeny
     .hamburger {
         top: 20px; 
         right: 20px;
     }
 
-    // Mitten av sidan
+    // öppen meny
+    ul {
+        padding: 4%;
+    }
+    
+    li {
+        margin: 5%;
+    }
+
+    /* Mitten av sidan */
+    // profilbild svartvit första sidan
     #bigProfileImg {
         width: 40%;
         max-width: 300px;
@@ -19,6 +30,7 @@
         float: left;
     }
 
+    // headings
     h1 {
         padding-top: 14%;
         font-size: 3.5rem;
@@ -28,6 +40,7 @@
         font-size: 2rem;
     }
 
+    // div Utbildning och Arbetslivserfarenhet
     .divWork,
     .divEducation {
         float: left;
@@ -51,14 +64,5 @@
     #divJensen {
         margin-top: 0;
         padding-top: 0;
-    }
-
-    /* Öppen meny */
-    ul {
-        padding: 4%;
-    }
-
-    li {
-        margin: 5%;
     }
 }

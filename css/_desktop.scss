@@ -4,7 +4,7 @@
 // --------------------------------------------------------------
 @media screen and (min-width: 1200px) {
 
-    // Övre delen av sidan
+    /* Övre delen av sidan */
     .hamburger {
         top: 15px; 
         right: 15px;
@@ -17,7 +17,8 @@
         margin-top: 5px;
     }
 
-    // Mitten av sidan
+    /* Mitten av sidan */
+    // profilbild svartvit första sidan
     #bigProfileImg {
         width: 50%;
         max-width: 250px;
@@ -26,6 +27,7 @@
         float: left;
     }
 
+    // headings
     h1 {
         padding-top: 13%;
         font-size: 3.2rem;
@@ -39,12 +41,12 @@
         font-size: 2.5rem;
     }
 
+    // div för Utbildning och Arbetslivserfarenhet
     .divWork,
     .divEducation {
         float: left;
         width: 28%;
-        min-height: 65%;
-        max-height: fit-content;
+        height: 65%;
         background-color: rgba(#222, 0.65);
         margin: 2.66%;
         border-radius: 20%;
@@ -52,7 +54,6 @@
             font-size: 1.7rem;
             padding-left: 2%;
             padding-right: 2%;
-            margin: 0;
         }
         p {
             font-size: 1rem;
@@ -63,8 +64,6 @@
 
     .workSpan {
         font-size: 1.2rem;
-        margin: 0;
-        padding: 0;
     }
 
     #divSH {
@@ -73,8 +72,7 @@
 
     #divJensen, 
     #divDiverse {
-        min-height: 30%;
-        max-height: fit-content;
+        height: 30%;
         margin-bottom: 2%;
     }
 
@@ -83,12 +81,13 @@
         padding-top: 0;
     }
 
+    // profilbild färg sidan Om mig
     #profileImgAboutMe {
         max-width: 250px;
         margin-top: 3%;
     }
 
-    // Nedre delen av sidan
+    /* Nedre delen av sidan */
     footer {
         height: 10vh;
         background-color: rgba(#fff, 0.1);

@@ -4,7 +4,8 @@
 // --------------------------------------------------------------
 @media screen and (min-width: 680px) {
 
-    // Övre delen av sidan
+    /* Övre delen av sidan */
+    // hamburgermeny
     .hamburger {
         top: 15px; 
         right: 15px;
@@ -25,7 +26,17 @@
         transform: rotate(-45deg) translate(8px, -8px);
     }
 
-    // Mitten av sidan
+    // Öppen meny
+    ul {
+        padding: 8%;
+    }
+
+    li {
+        margin: 5%;
+    }
+
+    /* Mitten av sidan */
+    // profilbild svartvit första sidan
     #bigProfileImg {
         width: 30%;
         max-width: 250px;
@@ -33,6 +44,7 @@
         margin-bottom: 5%;
     }
 
+    // headings
     h1 {
         padding-top: 2%;
         font-size: 2rem;
@@ -46,26 +58,18 @@
         font-size: 1.1rem;
     }
 
-    /* Öppen meny */
-    ul {
-        padding: 8%;
-    }
-
-    li {
-        margin: 5%;
-    }
-
-    // Nedre delen av sidan
-    .contactLi {
-        margin: 2;
-        padding: 0;
-    }
-
+    // profilbild färg sidan Om mig
     #profileImgAboutMe {
         border-radius: 50%;
         float: right;
         width: 30%;
         max-width: 250px;
         box-shadow: 2px 2px 1px #d3d3d3;
+    }
+
+    /* Nedre delen av sidan */
+    .contactLi {
+        margin: 2;
+        padding: 0;
     }
 }
