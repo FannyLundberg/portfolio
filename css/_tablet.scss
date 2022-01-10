@@ -26,15 +26,6 @@
         transform: rotate(-45deg) translate(8px, -8px);
     }
 
-    // Öppen meny
-    ul {
-        padding: 8%;
-    }
-
-    li {
-        margin: 5%;
-    }
-
     /* Mitten av sidan */
     // profilbild svartvit första sidan
     #bigProfileImg {
@@ -42,6 +33,15 @@
         max-width: 250px;
         margin-top: 7%;
         margin-bottom: 5%;
+    }
+
+    // Hur öppen meny visas
+    ul {
+        padding: 8%;
+    }
+
+    li {
+        margin: 5%;
     }
 
     // headings

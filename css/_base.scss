@@ -45,22 +45,36 @@ header span {
     }
 }
 
+// översta strecket i hambugermenyn
+#menuBtn.open .span1 {
+    transform: rotate(45deg) translate(6px, 6px);
+    border: transparent;
+}
+
+// mellersta strecket i hambugermenyn
 #menuBtn.open .span2 {
     transform: translateX(-65px);
     background: transparent;
     border: transparent;
 }
 
-#menuBtn.open .span1 {
-    transform: rotate(45deg) translate(6px, 6px);
-    border: transparent;
-}
-
+// nedersta strecket i hambugermenyn
 #menuBtn.open .span3 {
     transform: rotate(-45deg) translate(6px, -6px);
     border: transparent;
 }
 
+/* Mitten av sidan */
+section {
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to top left, #000 78%, #fff 50%, #e78ea5 50%, #e78ea5 100%);
+}
+
+// hur öppen meny visas
 ul {
     width: 100%;
     height: 80vh;
@@ -78,16 +92,6 @@ li {
         color: #e78ea5;
         text-decoration: underline;
     }
-}
-
-/* Mitten av sidan */
-section {
-    width: 100%;
-    height: 80vh;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to top left, #000 78%, #fff 50%, #e78ea5 50%, #e78ea5 100%);
 }
 
 // profilbild svartvit första sidan
