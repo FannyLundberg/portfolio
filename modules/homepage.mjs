@@ -23,7 +23,7 @@ export function homePage() {
     const homeH3 = document.createElement("h3");
 
     
-    // Nedräkning till examensdatum
+    // Nedräkning till examensdatum som uppdateras varje sekund
     const examensDatum = new Date("Juni 9, 2023 12:00:00").getTime();
 
     const x = setInterval(function() {

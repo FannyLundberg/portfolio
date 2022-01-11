@@ -74,7 +74,7 @@ export function aboutWorkList() {
 
     // P KappAhl
     const workPKappahl = document.createElement("p");
-    workPKappahl.innerText = "Ansvar för kampanjer, upplärning av nyanställda, praktikanter etc."
+    workPKappahl.innerHTML = "Ansvar för kassaavstämningar, upplärning av nyanställda, praktikanter etc.<br><br>Rollen innebar ansvar, teamarbete och effektivitet."
 
     /* Tommy Hilfiger */
     // Div Tommy Hilfiger
@@ -93,12 +93,78 @@ export function aboutWorkList() {
 
     // P Tommy Hilfiger
     const workPTh = document.createElement("p");
-    workPTh.innerText = "Hjälpte till med att prismärka och packa upp visningskollektioner, posthantering, utförsäljningar och event på NK."
+    workPTh.innerHTML = "Hjälpte till med att prismärka och packa upp visningskollektioner, posthantering, utförsäljningar och event på NK.<br><br>Rollen innbar hög social förmåga, prioriterings- och initiativförmåga."
+
+    /* Övriga jobb */
+    // Div Övriga jobb
+    const divDiverse = document.createElement("div");
+    divDiverse.className = "divWork";
+
+    // H2 Övriga jobb RPM
+    const workH2Diverse1 = document.createElement("h2");
+    workH2Diverse1.className = "h2Work";
+    workH2Diverse1.innerHTML = "RPM- och cykelinstruktör " + "<span class='workSpan'>(&nbsp;2015&nbsp;-&nbsp;2016&nbsp;)</span>"
+
+    // P Övriga jobb RPM
+    const workPDiverse1 = document.createElement("p");
+    workPDiverse1.innerHTML = "World Class Nacka (pass en gång i veckan)"
+
+    // H2 Övriga jobb Kommunal A-kassa
+    const workH2Diverse2 = document.createElement("h2");
+    workH2Diverse2.className = "h2Work";
+    workH2Diverse2.innerHTML = "Telefoninformatör " + "<span class='workSpan'>(&nbsp;2015&nbsp;-&nbsp;2015&nbsp;)</span>"
+
+    // P Övriga jobb Kommunal A-kassa
+    const workPDiverse2 = document.createElement("p");
+    workPDiverse2.innerHTML = "Information om A-kasseersättning via telefon (sommarjobb)";
+
+    // H2 Övriga jobb Fältassistent
+    const workH2Diverse3 = document.createElement("h2");
+    workH2Diverse3.className = "h2Work";
+    workH2Diverse3.innerHTML = "Värmdö Polarna " + "<span class='workSpan'>(&nbsp;2010&nbsp;-&nbsp;2011&nbsp;)</span>"
+
+    // P Övriga jobb Fältassistent
+    const workPDiverse3 = document.createElement("p");
+    workPDiverse3.innerHTML = "Fältassistent Värmdö kommun (kvällar och helger)";
+
+    /* Övriga meriter */
+    // Div Övriga jobb
+    const divMeriter = document.createElement("div");
+    divMeriter.className = "divWork";
+    divMeriter.id = "divMeriter";
+
+    // H2 Övriga meriter
+    const workH2Meriter = document.createElement("h2");
+    workH2Meriter.className = "h2Work";
+    workH2Meriter.innerHTML = "Övriga meriter";
+
+    // P Övriga meriter Styrelse
+    const workPMeriter1 = document.createElement("p");
+    workPMeriter1.innerHTML = "Styrelsemedlem i samfällighetsförening";
+
+    // P Övriga meriter Körkort
+    const workPMeriter2 = document.createElement("p");
+    workPMeriter2.innerHTML = "B-körkort";
+
+    // P Övriga meriter Språk svenska
+    const workPMeriter3 = document.createElement("p");
+    workPMeriter3.innerHTML = "Svenska (modersmål)";
+
+    // P Övriga meriter Språk engelska
+    const workPMeriter4 = document.createElement("p");
+    workPMeriter4.innerHTML = "Engelska (flytande)";
+
+    // P Övriga meriter Office
+    const workPMeriter5 = document.createElement("p");
+    workPMeriter5.innerHTML = "Office-paketet (mycket goda kunskaper)";
+
 
     // Appenda nya element
-    sectionContent.append(workH1, divSergel, divSc, divKappahl, divTh);
+    sectionContent.append(workH1, divSergel, divSc, divKappahl, divTh, divDiverse, divMeriter);
     divSergel.append(workH2Sergel, workH3Sergel1, workPSergel1, workH3Sergel2, workPSergel2, workPSergel2);
     divSc.append(workH2Sc, workH3Sc, workPSc);
     divKappahl.append(workH2Kappahl, workH3Kappahl, workPKappahl);
     divTh.append(workH2Th, workH3Th, workPTh);
+    divDiverse.append(workH2Diverse1, workPDiverse1, workH2Diverse2, workPDiverse2, workH2Diverse3, workPDiverse3);
+    divMeriter.append(workH2Meriter, workPMeriter1, workPMeriter2, workPMeriter3, workPMeriter4, workPMeriter5);
 }
