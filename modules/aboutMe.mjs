@@ -1,8 +1,6 @@
 // Funktion som körs om "Om mig" är klickad
 export function aboutMeList() {
 
-    //document.querySelector("#menuBtn").classList.remove("open");
-
     sectionContent.innerHTML = "";
 
     // Skapa element - profilbild

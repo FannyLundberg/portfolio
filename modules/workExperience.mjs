@@ -1,8 +1,6 @@
 // Funktion som körs om "Arbetslivserfarenhet" är klickad
 export function aboutWorkList() {
 
-    //document.querySelector("#menuBtn").classList.remove("open");
-
     sectionContent.innerHTML = "";
 
     // H1

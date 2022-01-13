@@ -10,78 +10,29 @@ import { aboutProjectList } from './modules/projects.mjs';
 // Vid klick på Om mig i menyn
 import { aboutMeList } from './modules/aboutMe.mjs';
 
+
 // Funktion för att visa startsida
 homePage();
 
+
 // Hämta variabler
-const sectionContent = document.getElementById("sectionContent");
 const menuBtn = document.getElementById("menuBtn");
+const homeMenu = document.getElementById("homeMenu");
+const aboutEducationMenu = document.getElementById("aboutEducationMenu");
+const aboutWorkMenu = document.getElementById("aboutWorkMenu");
+const aboutMeMenu = document.getElementById("aboutMeMenu");
+const aboutProjectMenu = document.getElementById("aboutProjectMenu");
 
-
-let menuOpen = false;
 
 // Klick på hamburgermeny
-menuBtn.addEventListener("click", () => {
-
-    if (!menuOpen) {
-        menuBtn.classList.add("open");
-        console.log("Kommer in i if")
-        openMenu();
-    }/* else {
-        menuBtn.classList.remove("open");
-        console.log("Kommer in i else")
-    }*/
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('menu-open');
 });
 
 
-// Visa meny
-function openMenu() {
-
-    sectionContent.innerHTML = "";
-
-    // Skapa en ul
-    const viewOpenMenu = document.createElement("ul");
-    sectionContent.append(viewOpenMenu);
-
-    // Skapa listan - Hem
-    const homeMenu = document.createElement("li");
-    homeMenu.innerText = "Hem";
-
-    // Skapa listan - Utbildning
-    const aboutEducationMenu = document.createElement("li");
-    aboutEducationMenu.innerText = "Utbildning";
-    
-    // Skapa listan - Arbetslivserfarenhet
-    const aboutWorkMenu = document.createElement("li");
-    aboutWorkMenu.innerText = "Arbetslivserfarenhet";
-
-    // Skapa listan - Projekt
-    const aboutProjectMenu = document.createElement("li");
-    aboutProjectMenu.innerText = "Projekt";
-
-    // Skapa listan - Om mig
-    const aboutMeMenu = document.createElement("li");
-    aboutMeMenu.innerText = "Om mig";
-
-    // Appenda li på ul
-    viewOpenMenu.append(homeMenu, aboutEducationMenu, aboutWorkMenu, aboutProjectMenu, aboutMeMenu);
-    
-    // Göra li till länkar/knappar
-    homeMenu.addEventListener("click", (homePage));
-    aboutEducationMenu.addEventListener("click", (aboutEducationList));
-    aboutWorkMenu.addEventListener("click", (aboutWorkList));
-    aboutMeMenu.addEventListener("click", (aboutMeList));
-    aboutProjectMenu.addEventListener("click", (aboutProjectList));
-
-    /*
-    // För att inte skapa fler ul och li vid tryck på meny
-    const menuDisplayed = viewOpenMenu + homeMenu + aboutEducationMenu + aboutWorkMenu + + aboutProjectMenu + aboutMeMenu;
-    
-    if (menuDisplayed) {
-        menuBtn.addEventListener("click", () => { 
-            homePage()   
-            console.log("In i if-sats meny visas")   
-        });
-    }
-    */
-};
+// Klick i menyn kallar funktion som skriver ut rätt sida
+homeMenu.addEventListener("click", (homePage));
+aboutEducationMenu.addEventListener("click", (aboutEducationList));
+aboutWorkMenu.addEventListener("click", (aboutWorkList));
+aboutProjectMenu.addEventListener("click", (aboutProjectList));
+aboutMeMenu.addEventListener("click", (aboutMeList));

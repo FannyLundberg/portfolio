@@ -1,8 +1,6 @@
 // Funktion som körs om "Utbildning" är klickad
 export function aboutEducationList() {
 
-    //document.querySelector("#menuBtn").classList.remove("open");
-
     sectionContent.innerHTML = "";
 
     // H1
@@ -13,6 +11,7 @@ export function aboutEducationList() {
     // Div Medieinstitutet
     const divMedieinstitutet = document.createElement("div");
     divMedieinstitutet.className = "divEducation";
+    divMedieinstitutet.id = "divMedieInstitet";
 
     // H2 Medieinstitutet
     const educationH2Mi = document.createElement("h2");
