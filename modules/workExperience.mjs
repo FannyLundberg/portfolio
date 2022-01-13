@@ -10,31 +10,41 @@ export function aboutWorkList() {
     workH1.id = "workH1";
     workH1.innerText = "Arbetslivserfarenhet"
 
-    /* Sergel */
+    /* Sergel Bemanningsplanering */
     // Div Sergel
-    const divSergel = document.createElement("div");
-    divSergel.className = "divWork";
+    const divSergel1 = document.createElement("div");
+    divSergel1.className = "divWork";
 
-    // H2 Sergel Kredittjänster
-    const workH2Sergel = document.createElement("h2");
-    workH2Sergel.className = "h2Work";
-    workH2Sergel.innerHTML = "Sergel Kredittjänster" + " " + "<span class='workSpan'>(&nbsp;2015&nbsp;-&nbsp;nuvarande&nbsp;)</span>"
+    // H2 Sergel Bemanningsplanering
+    const workH2Sergel1 = document.createElement("h2");
+    workH2Sergel1.className = "h2Work";
+    workH2Sergel1.innerHTML = "Sergel Kredittjänster" + " " + "<span class='workSpan'>(&nbsp;2018&nbsp;-&nbsp;nuvarande&nbsp;)</span>"
 
-    // H2 Sergel Kredittjänster Bemanningsplanering
+    // H2 Sergel Bemanningsplanering
     const workH3Sergel1 = document.createElement("h3");
     workH3Sergel1.className = "h3Work";
     workH3Sergel1.innerText = "Personnel Planning Officer"
 
-    // P Sergel Kredittjänster Bemanningsplanering
+    // P Sergel Bemanningsplanering
     const workPSergel1 = document.createElement("p");
     workPSergel1.innerHTML = "Bemanningsplanerare med huvudansvar för systemförvaltning och utveckling av telefonisystem (CallGuide/ACE, Puzzel). <br><br>Rollen har gjort mig mer lösningsorienterad, proaktiv och kommunikativ."
 
-    // H3 Sergel Kredittjänster Inkassohandläggare
+    /* Sergel Inkassohandläggare */
+    // Div Sergel Inkassohandläggare
+    const divSergel2 = document.createElement("div");
+    divSergel2.className = "divWork";
+
+    // H2 Sergel Inkassohandläggare
+    const workH2Sergel2 = document.createElement("h2");
+    workH2Sergel2.className = "h2Work";
+    workH2Sergel2.innerHTML = "Sergel Kredittjänster" + " " + "<span class='workSpan'>(&nbsp;2015&nbsp;-&nbsp;2018&nbsp;)</span>"
+
+    // H3 Sergel Inkassohandläggare
     const workH3Sergel2 = document.createElement("h3");
     workH3Sergel2.className = "h3Work";
     workH3Sergel2.innerText = "Inkasso- och reskontrahandläggare"
 
-    // P Sergel Kredittjänster Inkassohandläggare
+    // P Sergel Inkassohandläggare
     const workPSergel2 = document.createElement("p");
     workPSergel2.innerHTML = "Handläggning av ärenden via telefon, chatt och mail. <br><br>Rollen kräver hög professionalism, noggrannhet och servicemind."
 
@@ -102,7 +112,7 @@ export function aboutWorkList() {
 
     // H2 Övriga jobb RPM
     const workH2Diverse1 = document.createElement("h2");
-    workH2Diverse1.className = "h2Work";
+    workH2Diverse1.className = "h2WorkDiverse";
     workH2Diverse1.innerHTML = "RPM- och cykelinstruktör " + "<span class='workSpan'>(&nbsp;2015&nbsp;-&nbsp;2016&nbsp;)</span>"
 
     // P Övriga jobb RPM
@@ -111,7 +121,7 @@ export function aboutWorkList() {
 
     // H2 Övriga jobb Kommunal A-kassa
     const workH2Diverse2 = document.createElement("h2");
-    workH2Diverse2.className = "h2Work";
+    workH2Diverse2.className = "h2WorkDiverse";
     workH2Diverse2.innerHTML = "Telefoninformatör " + "<span class='workSpan'>(&nbsp;2015&nbsp;-&nbsp;2015&nbsp;)</span>"
 
     // P Övriga jobb Kommunal A-kassa
@@ -120,7 +130,7 @@ export function aboutWorkList() {
 
     // H2 Övriga jobb Fältassistent
     const workH2Diverse3 = document.createElement("h2");
-    workH2Diverse3.className = "h2Work";
+    workH2Diverse3.className = "h2WorkDiverse";
     workH2Diverse3.innerHTML = "Värmdö Polarna " + "<span class='workSpan'>(&nbsp;2010&nbsp;-&nbsp;2011&nbsp;)</span>"
 
     // P Övriga jobb Fältassistent
@@ -135,7 +145,7 @@ export function aboutWorkList() {
 
     // H2 Övriga meriter
     const workH2Meriter = document.createElement("h2");
-    workH2Meriter.className = "h2Work";
+    workH2Meriter.className = "h2WorkDiverse";
     workH2Meriter.innerHTML = "Övriga meriter";
 
     // P Övriga meriter Styrelse
@@ -160,8 +170,9 @@ export function aboutWorkList() {
 
 
     // Appenda nya element
-    sectionContent.append(workH1, divSergel, divSc, divKappahl, divTh, divDiverse, divMeriter);
-    divSergel.append(workH2Sergel, workH3Sergel1, workPSergel1, workH3Sergel2, workPSergel2, workPSergel2);
+    sectionContent.append(workH1, divSergel1, divSergel2, divSc, divKappahl, divTh, divDiverse, divMeriter);
+    divSergel1.append(workH2Sergel1, workH3Sergel1, workPSergel1);
+    divSergel2.append(workH2Sergel2, workH3Sergel2, workPSergel2, workPSergel2);
     divSc.append(workH2Sc, workH3Sc, workPSc);
     divKappahl.append(workH2Kappahl, workH3Kappahl, workPKappahl);
     divTh.append(workH2Th, workH3Th, workPTh);

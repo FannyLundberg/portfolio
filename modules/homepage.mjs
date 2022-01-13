@@ -47,8 +47,8 @@ export function homePage() {
 
     // H4 till första sidan
     const homeH4 = document.createElement("h4");
-    homeH4.innerHTML = 'En strukturerad, lösningsorienterad och positiv <br> person som nu kommit på "vad jag ska bli när jag blir stor"';
+    homeH4.innerHTML = '<span id="struktureradSpan">Strukturerad,</span> lösningsorienterad och positiv <br> person som nu kommit på "vad jag ska bli när jag blir stor"';
 
     // Appenda nya elementen
-    sectionContent.append(profileImgHome, homeH1, homeH2, homeH3, homeH4);
+    sectionContent.append(profileImgHome, homeH1, homeH2, homeH3, homeH4);    
 }
