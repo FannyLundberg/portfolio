@@ -11,7 +11,7 @@ export function aboutProjectList() {
     // A - repo Lunch
     const projectA1 = document.createElement("a");
     const linkText1 = 'Repo "Lunchrestaurang med switch"'
-    projectA1.href = "https://github.com/FannyLundberg/lunch.git";
+    projectA1.href = "https://fannylundberg.github.io/lunch/";
     projectA1.className = "projectLink";
 
     // A - repo ålder
