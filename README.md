@@ -1,3 +1,2 @@
 # portfolio
-Fanny Lundberg
-CV och portfolio
+Fanny Lundbergs CV och portfolio
