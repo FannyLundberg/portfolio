@@ -26,18 +26,9 @@ export function aboutProjectList() {
     projectA3.href = "https://fannylundberg.github.io/word-poetry/";
     projectA3.className = "projectLink";
 
-    /*
-    // Stelin Entreprenad
-    const projectA4 = document.createElement("a");
-    const linkText4 = 'Hemsida Stelin Entreprenad'
-    projectA4.href = "https://stelinentreprenad.se/";
-    projectA4.className = "projectLink";
-    */
-
     // Appenda nya element
-    sectionContent.append(projectH1, projectA1, projectA2, projectA3/*, projectA4*/);
+    sectionContent.append(projectH1, projectA1, projectA2, projectA3);
     projectA1.append(linkText1);
     projectA2.append(linkText2);
     projectA3.append(linkText3);
-    /*projectA4.append(linkText4);*/
 }
