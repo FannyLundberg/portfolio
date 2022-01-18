@@ -21,6 +21,7 @@ export function homePage() {
 
     // H3 till första sidan
     const homeH3 = document.createElement("h3");
+    homeH3.id = "homeH3";
 
     
     // Nedräkning till examensdatum som uppdateras varje sekund
@@ -40,13 +41,14 @@ export function homePage() {
         let minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((countDown % (1000 * 60)) / 1000);
     
-        // Visa nedräkning i paragrafen
+        // Visa nedräkning i H3
         homeH3.innerHTML = "Examen om: " + days + "d " + "  " + hours + "h " + "  " + minutes + "m " + "  " + seconds + "s ";
 
     }, 1000);
 
     // H4 till första sidan
     const homeH4 = document.createElement("h4");
+    homeH4.id = "homeH4";
     homeH4.innerHTML = '<span id="struktureradSpan">Strukturerad,</span> lösningsorienterad och positiv <br> person som nu kommit på "vad jag ska bli när jag blir stor"';
 
     // Appenda nya elementen
