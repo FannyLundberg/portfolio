@@ -24,7 +24,7 @@ export function aboutEducationList() {
 
     // P Medieinstitutet
     const educationPMi = document.createElement("p");
-    educationPMi.innerHTML = "<b>Utbildningen inkluderar bland annat:</b><br> HTML, CSS (Sass), JavaScript <br><br> <b>Ramverk:</b><br> React, Angular <br><br><b>Bibliotek:</b><br> jQuery <br><br><b>Övrigt:</b><br> Användbarhet, tillgänglighet, UX, Git, GitHub, API:er, projekt- och arbetsmetodik för utvecklare";
+    educationPMi.innerHTML = "<b>Utbildningen inkluderar bland annat:</b><br> HTML, CSS, JavaScript, React, Angular, TypeScript, Sass, jQuery <br><br><b>Övrigt:</b><br> Användbarhet, tillgänglighet, UX, Git, GitHub, API:er, projekt- och arbetsmetodik för utvecklare";
 
     // Div Södertörns högskola
     const divSH = document.createElement("div");
@@ -42,7 +42,7 @@ export function aboutEducationList() {
     
     // P Södertörns högskola
     const educationPSh = document.createElement("p");
-    educationPSh.innerHTML = "<b>Utbildningen inkluderar:</b><br> Företagsekonomi (A, B och C) <br><br> Statisik för ekonomer <br><br> Engelska A <br><br> Nationalekonomi A <br><br> Handelsrättslig översiktskurs<br> ";
+    educationPSh.innerHTML = "<b>Utbildningen inkluderar:</b><br> Företagsekonomi (A, B och C) <br> Statisik för ekonomer <br> Engelska A <br> Nationalekonomi A <br> Handelsrättslig översiktskurs<br> ";
 
     // Div övrigt utbildning
     const divDiverse = document.createElement("div");

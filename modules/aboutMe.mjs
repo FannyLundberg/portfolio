@@ -28,7 +28,7 @@ export function aboutMeList() {
     
     // P Fritid
     const aboutMeP2 = document.createElement("p");
-    aboutMeP2.innerText = "Utöver att koda tycker jag om att vara med mina nära och kära, lyssna på podd och se dokumentärer. När världen tillåter tycker jag även om att resa och gå på konsert."
+    aboutMeP2.innerText = 'Utöver att koda tycker jag om att vara med mina nära och kära, lyssna på podd och se dokumentärer. När världen "tillåter" tycker jag även om att resa och gå på konsert.'
 
     // Appenda nya element
     sectionContent.append(divAboutMe);
