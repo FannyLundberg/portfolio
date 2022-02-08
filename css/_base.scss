@@ -221,6 +221,10 @@ h2 {
     font-size: 2rem;
     margin-top: 3%;
     color: white;
+    &:hover {
+        color: #e78ea5;
+        text-decoration: underline;
+    }
 }
 
 /* 
