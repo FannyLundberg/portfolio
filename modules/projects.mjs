@@ -33,7 +33,7 @@ export function aboutProjectList() {
     projectA4.className = "projectLink";
 
     // Appenda nya element
-    sectionContent.append(projectH1, projectA1, projectA2, projectA3);
+    sectionContent.append(projectH1, projectA1, projectA2, projectA3, projectA4);
     projectA1.append(linkText1);
     projectA2.append(linkText2);
     projectA3.append(linkText3);
