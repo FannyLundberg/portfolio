@@ -19,7 +19,7 @@ export function homePage() {
         imgBlackAndWhite.id = "imgBlackAndWhite";
         sectionContent.prepend(imgBlackAndWhite);
 
-        imgBlackAndWhite.addEventListener("mouseleave", function () {
+        imgBlackAndWhite.addEventListener("mouseenter", function () {
             imgBlackAndWhite.remove();
             showMusicImg();
         });
