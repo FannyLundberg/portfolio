@@ -14,10 +14,10 @@ export function homePage() {
     showProfileImg();
 
     function showProfileImg() {
-        const imgBlackAndWhite = document.createElement('img');
-        imgBlackAndWhite.src='img/profilbild.jpg';
-        imgBlackAndWhite.id = "imgBlackAndWhite";
-        sectionContent.prepend(imgBlackAndWhite);
+        const imgProfile = document.createElement('img');
+        imgProfile.src='img/profilbild.jpg';
+        imgProfile.id = "imgBlackAndWhite";
+        sectionContent.prepend(imgProfile);
 
         imgBlackAndWhite.addEventListener("mouseenter", function () {
             imgBlackAndWhite.remove();
