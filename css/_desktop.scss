@@ -23,7 +23,15 @@
     Mitten av sidan 
     */
     // profilbild svartvit första sidan
-    #bigProfileImg {
+    #imgBlackAndWhite {
+        width: 50%;
+        max-width: 250px;
+        margin-top: 12%;
+        margin-left: 17%;
+        float: left;
+    }
+
+    #imgMusic {
         width: 50%;
         max-width: 250px;
         margin-top: 12%;

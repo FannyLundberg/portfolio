@@ -7,9 +7,36 @@ export function homePage() {
 
     /* Skapa element */
     // Profilbild till första sidan
-    const profileImgHome = document.createElement("img");
-    profileImgHome.src = "./img/profilbild.jpg";
-    profileImgHome.id = "bigProfileImg";
+    // const profileImgHome = document.createElement("img");
+    // profileImgHome.src = "./img/profilbild.jpg";
+    // profileImgHome.id = "bigProfileImg";
+
+    showProfileImg();
+
+    function showProfileImg() {
+        const imgBlackAndWhite = document.createElement('img');
+        imgBlackAndWhite.src='img/profilbild.jpg';
+        imgBlackAndWhite.id = "imgBlackAndWhite";
+        sectionContent.prepend(imgBlackAndWhite);
+
+        imgBlackAndWhite.addEventListener("mouseleave", function () {
+            imgBlackAndWhite.remove();
+            showMusicImg();
+        });
+    } 
+
+
+    function showMusicImg() {
+        const imgMusic = document.createElement('img');
+        imgMusic.src='img/musicImg.jpg';
+        imgMusic.id = "imgMusic";
+        sectionContent.prepend(imgMusic);
+
+        imgMusic.addEventListener("mouseleave", function () {
+            imgMusic.remove();
+            showProfileImg();
+        });
+    } 
 
     // H1 till första sidan
     const homeH1 = document.createElement("h1");
@@ -52,5 +79,5 @@ export function homePage() {
     homeH4.innerHTML = '<span id="struktureradSpan">Strukturerad,</span> lösningsorienterad och positiv <br> person som nu kommit på "vad jag ska bli när jag blir stor"';
 
     // Appenda nya elementen
-    sectionContent.append(profileImgHome, homeH1, homeH2, homeH3, homeH4);    
+    sectionContent.append(homeH1, homeH2, homeH3, homeH4);    
 }
