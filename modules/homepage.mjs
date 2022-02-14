@@ -5,12 +5,6 @@ export function homePage() {
 
     document.querySelector("#menuBtn").classList.remove("open");
 
-    /* Skapa element */
-    // Profilbild till första sidan
-    // const profileImgHome = document.createElement("img");
-    // profileImgHome.src = "./img/profilbild.jpg";
-    // profileImgHome.id = "bigProfileImg";
-
     showProfileImg();
 
     function showProfileImg() {
