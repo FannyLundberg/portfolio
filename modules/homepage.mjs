@@ -13,7 +13,7 @@ export function homePage() {
         imgProfile.id = "imgBlackAndWhite";
         sectionContent.prepend(imgProfile);
 
-        imgBlackAndWhite.addEventListener("mouseenter", function () {
+        imgProfile.addEventListener("mouseenter", function () {
             imgProfile.remove();
             showHiImg();
         });
@@ -23,10 +23,10 @@ export function homePage() {
     function showHiImg() {
         const imgHi = document.createElement('img');
         imgHi.src='img/hi.jpg';
-        imgHi.id = "imgMusic";
+        imgHi.id = "imgHi";
         sectionContent.prepend(imgHi);
 
-        imgMusic.addEventListener("mouseleave", function () {
+        imgHi.addEventListener("mouseleave", function () {
             imgHi.remove();
             showProfileImg();
         });
