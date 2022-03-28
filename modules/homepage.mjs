@@ -22,7 +22,7 @@ export function homePage() {
 
     function showHiImg() {
         const imgHi = document.createElement('img');
-        imgHi.src='img/hi.jpg';
+        imgHi.src='img/hi.JPG';
         imgHi.id = "imgHi";
         sectionContent.prepend(imgHi);
 
