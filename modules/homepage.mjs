@@ -9,25 +9,25 @@ export function homePage() {
 
     function showProfileImg() {
         const imgProfile = document.createElement('img');
-        imgProfile.src='img/profilbild.jpg';
+        imgProfile.src='img/profileImg.jpg';
         imgProfile.id = "imgBlackAndWhite";
         sectionContent.prepend(imgProfile);
 
         imgBlackAndWhite.addEventListener("mouseenter", function () {
-            imgBlackAndWhite.remove();
-            showMusicImg();
+            imgProfile.remove();
+            showHiImg();
         });
     } 
 
 
-    function showMusicImg() {
-        const imgMusic = document.createElement('img');
-        imgMusic.src='img/musicImg.jpg';
-        imgMusic.id = "imgMusic";
-        sectionContent.prepend(imgMusic);
+    function showHiImg() {
+        const imgHi = document.createElement('img');
+        imgHi.src='img/hi.jpg';
+        imgHi.id = "imgMusic";
+        sectionContent.prepend(imgHi);
 
         imgMusic.addEventListener("mouseleave", function () {
-            imgMusic.remove();
+            imgHi.remove();
             showProfileImg();
         });
     } 
