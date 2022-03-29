@@ -24,7 +24,7 @@ export function aboutEducationList() {
 
     // P Medieinstitutet
     const educationPMi = document.createElement("p");
-    educationPMi.innerHTML = "<b>Utbildningen inkluderar bland annat:</b><br> HTML, CSS, JavaScript, React, Angular, TypeScript, SCSS, jQuery <br><br><b>Övrigt:</b><br> Användbarhet, tillgänglighet, UX, Git, GitHub, API:er, projekt- och arbetsmetodik för utvecklare";
+    educationPMi.innerHTML = "<b>Utbildningen inkluderar bland annat:</b><br> HTML, CSS, JavaScript, React, Angular, TypeScript, jQuery, SCSS, NoSql, NodeJS <br><br><b> Övrigt:</b><br> Användbarhet, tillgänglighet, UX, Git, GitHub, API:er, projekt- och arbetsmetodik för utvecklare";
 
     // Div Södertörns högskola
     const divSH = document.createElement("div");

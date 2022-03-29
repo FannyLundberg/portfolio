@@ -25,7 +25,7 @@ export function aboutWorkList() {
 
     // P Sergel Bemanningsplanering
     const workPSergel1 = document.createElement("p");
-    workPSergel1.innerHTML = "Bemanningsplanerare med huvudansvar för systemförvaltning och utveckling av telefonisystem (CallGuide/ACE, Puzzel). <br><br>Rollen har gjort mig mer lösningsorienterad, proaktiv och kommunikativ."
+    workPSergel1.innerHTML = "Bemanningsplanerare med huvudansvar för systemförvaltning och utveckling av telefonisystem (CallGuide/ACE, Puzzel). <br><br> Utbildat i daglig användning av telefonisystem och har medverkat vid flera stora projekt för talsvaret. <br><br>Rollen har gjort mig mer lösningsorienterad, proaktiv och kommunikativ."
 
     /* Sergel Inkassohandläggare */
     // Div Sergel Inkassohandläggare
@@ -44,7 +44,7 @@ export function aboutWorkList() {
 
     // P Sergel Inkassohandläggare
     const workPSergel2 = document.createElement("p");
-    workPSergel2.innerHTML = "Handläggning av ärenden via telefon, chatt och mail. <br><br>Rollen kräver hög professionalism, noggrannhet och servicemind."
+    workPSergel2.innerHTML = "Handläggning av ärenden via telefon, chatt och mail. <br><br> Först anställd via Academic Work och sedan överrekryterad januari 2016. <br><br> Rollen kräver hög professionalism, noggrannhet och servicemind."
 
     /* Student consulting */
     // Div Student consulting
